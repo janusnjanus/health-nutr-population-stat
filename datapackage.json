@@ -1,0 +1,150 @@
+{
+  "name": "health-nutr-population-stat",
+  "title": "Health Nutrition and Population Statistics",
+  "format": "csv",
+  "datapackage_version": "1.0.0",
+  "last_modified": "2017-01-30",
+  "licenses": [
+    {
+      "type": "ODC-PDDL-1.0",
+      "url": "http://opendatacommons.org/licenses/pddl/1.0/"
+    }
+  ],
+  "sources": [
+    {
+      "name": " The World Bank Org.",
+      "web": "http://datatopics.worldbank.org/hnp/"
+    }
+  ],
+  "resources": [
+    {
+      "url": "https://raw.github.com/schoolofdata-ch/health-nutr-population-stat/master/data/HNP_Data.csv",
+      "path": "data/HNP_Data.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Country",
+            "description": "Country Name",
+            "type": "string"
+          },
+          {
+            "name": "Indicator",
+            "description": "Indicator Name",
+            "type": "string"
+          }
+        ]
+      }
+    }
+    {
+      "url": "https://raw.github.com/schoolofdata-ch/health-nutr-population-stat/master/data/HNP_Country.csv",
+      "path": "data/HNP_Country.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Series Code",
+            "description": "Inicator Code",
+            "type": "string"
+          },
+          {
+            "name": "Topic",
+            "description": "Category",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+    
+      "url": "https://raw.github.com/schoolofdata-ch/health-nutr-population-stat/master/data/HNP_Country-Series.csv",
+      "path": "data/HNP_Country-Series.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Series Code",
+            "description": "Inicator Code",
+            "type": "string"
+          },
+          {
+            "name": "Topic",
+            "description": "Category",
+            "type": "string"
+          }
+        ]
+      }
+    },
+        {
+    
+      "url": "https://raw.github.com/schoolofdata-ch/health-nutr-population-stat/master/data/HNP_FootNote.csv",
+      "path": "data/HNP_FootNote.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Country Code",
+            "description": "Country Code",
+            "type": "string"
+          },
+          {
+            "name": "Description",
+            "description": "foot note description",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://raw.github.com/schoolofdata-ch/health-nutr-population-stat/master/data/HNP_Series-Time.csv",
+      "path": "HNP_Series-Time.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Country Code",
+            "description": "Country Three Letters Code",
+            "type": "string"
+          },
+          {
+            "name": "Country Name",
+            "description": "Country Long Name",
+            "type": "string"
+          },
+          {
+            "name": "Latest household survey",
+            "description": "Type of Survey and Organization",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+
+      "url": "https://raw.github.com/schoolofdata-ch/health-nutr-population-stat/master/data/HNP_Series.csv",
+      "path": "HNP_Series.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Country Code",
+            "description": "Country Three Letters Code",
+            "type": "string"
+          },
+          {
+            "name": "Series Code",
+            "description": "Indicator Code",
+            "type": "string"
+          },
+          {
+            "name": "Limitation and exception",
+            "description": "Limitation and exception",
+            "type": "string"
+          }
+        ]
+      }
+    }
+    
+  ],
+    }
+
+  ],
+  "maintainers":[{
+    "name": "School of Data",
+    "web": "https://www.schoolofdata.ch/"
+  }]
+}
